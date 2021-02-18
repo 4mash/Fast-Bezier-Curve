@@ -1,0 +1,45 @@
+button {
+    padding: 10px 20px;
+    border: none;
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.button-element{
+    background-color: #999999;
+    border-radius: 20px;
+}
+
+.title-container{
+    background-image: linear-gradient(to right, #717177, #3e3e40, #3e3e40, #717177);
+    color: white;
+    margin: -8px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.shift-margin
+{
+    margin-left: 10px;
+}
+
+.canvas-style
+{
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border:2px solid black;
+}
+
+.input-style
+{
+    background: #999999;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+}

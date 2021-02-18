@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Fast Bézier Curve</title>
+</head>
+<body style = "font-family:'Segoe UI Light', monospace;">
+<h2 class = "title-container">Welcome to Fast Bézier Curve generator!</h2>
+<div>
+    <h4 class = "shift-margin">Use the mouse to place control points inside the canvas and press "Render" to draw the curve. You can reset by pressing "Clear".</h4>
+    <h4 class = "shift-margin">"Curve edges" determine how many samples will be applied when rendering the curve. <label style="color: red">VERY HIGH VALUES MAY CRASH THE PROCESS!</label></h4>
+    <h4 class = "shift-margin">You can re-adjust the control points with the mouse after they are placed. There are no limits to how many control points you can place, so go wild!</h4>
+    <h4 class = "shift-margin">To resize the canvas, drag from the bottom-right corner.</h4>
+    <h3 class = "shift-margin" id = "mousePos">Mouse Position: 0,0</h3>
+    <canvas id = "canvas" width="700" height="400" class = "canvas-style"></canvas><br>
+    <button class = "button-element" style="margin-left: 10px;" id = "render">Render</button>
+    <button class = "button-element" id = "clear">Clear</button>
+    <label class = "shift-margin" style="font-size: 24px;" for="granularity">Curve edges: </label><input class="input-style" type = "number" id = "granularity" value="10">
+    <em class = "shift-margin" id = "runtime"></em>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
